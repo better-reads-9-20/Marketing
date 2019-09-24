@@ -1,6 +1,7 @@
 header {
     .flex(column, space-around);
     align-items: center;
+    max-width: 90vw;
 
     img {
     width: 80vw;
@@ -23,6 +24,28 @@ header {
 
         a:hover {
             color: grey;
+        }           
+    }
+
+    @media @tablet {
+        .flex (row, space-between);
+        width: 90vw;
+        align-items: flex-end;
+        
+        nav {
+            .flex(row, space-between);
+
+            a {
+                    margin: 0;
+                    text-align: none;
+                    width: 20vw;
+                    border: none;
+                    }
+        }
+
+        img {
+            width: 40vw;
+            border: none;
         }
     }
 }
