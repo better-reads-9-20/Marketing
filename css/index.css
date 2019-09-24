@@ -126,10 +126,51 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.background-img img {
-  position: fixed;
-  z-index: -1;
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 900px;
+  max-width: 900px;
+  margin: 20px 50px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+h2,
+h3 {
+  font-size: 3rem;
+}
+p {
+  font-size: 1.8rem;
 }
 header img {
   width: 80vw;
+  max-width: 900px;
+}
+.top-content img {
+  width: 100%;
+  height: 200px;
+}
+.bottom-content {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom-content .bottom-text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bottom-content .bottom-img {
+  width: 45%;
+}
+.bottom-content .bottom-img img {
+  width: 100%;
 }
