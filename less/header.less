@@ -1,0 +1,28 @@
+header {
+    .flex(column, space-around);
+    align-items: center;
+
+    img {
+    width: 80vw;
+    }
+
+    nav {
+        .flex(column, space-around);
+        align-items: center;
+
+        a {
+            font-size: 2rem;
+            border-bottom: 2px solid lightgrey;
+            width: 40vw;
+            text-align: center;
+            padding: 2% 0;
+            margin: 2% 0;
+            text-decoration: none;
+            color: @linkColor;
+        }
+
+        a:hover {
+            color: grey;
+        }
+    }
+}
