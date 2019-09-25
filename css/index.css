@@ -410,8 +410,11 @@ footer nav a {
     justify-content: flex-start;
     align-items: center;
   }
-  .aboutUsContainers header img {
-    text-align: center;
+  .aboutUsContainers header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
   .aboutUsContainers .profiles .multiDevs {
     display: flex;
