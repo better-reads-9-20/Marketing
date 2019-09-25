@@ -2,15 +2,48 @@ footer {
     background: @backgroundTwo;
     width: 100%;
     text-align: center;
+    .flex(row, space-between);
+
+    .footerImg {
+        width: 15vw;
+        margin: 1vw;
+        img {
+            width: 100%;
+        }
+    }
 
     nav {
-        .flex(row, space-between);
+        .flex(row, flex-end);
+        width: 70vw;
+        align-items: flex-end;
 
         a {
             padding: 2%;
-            font-size: 1.6rem;
+            margin: 5%;
+            font-size: 1.4rem;
             text-decoration: none;
             color: @linkColor;
+            white-space: nowrap;
+        }
+    }
+
+    @media @desktop {
+
+        .footerImg{
+            width:100px;
+            margin: 10px;
+            img {
+                width: 75px;
+            }
+        }
+        nav{
+            width: 600px;
+
+            a{
+                font-size: 1.8rem;
+                margin:2%;
+                padding: 3%;
+            }
         }
     }
 }
