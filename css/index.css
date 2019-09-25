@@ -152,7 +152,7 @@ h4 {
   font-family: Indie Flower, cursive;
 }
 p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: black;
 }
 @media (min-width: 800px) {
@@ -267,6 +267,10 @@ header nav a:hover {
   width: 25vw;
   margin-left: 35px;
 }
+.middle-content .middle-text button a {
+  text-decoration: none;
+  color: black;
+}
 .middle-content .middle-img {
   width: 50%;
 }
@@ -311,6 +315,10 @@ header nav a:hover {
 .bottom-content .bottom-text button {
   width: 25vw;
   margin-left: 35px;
+}
+.bottom-content .bottom-text button a {
+  text-decoration: none;
+  color: black;
 }
 .bottom-content .bottom-img {
   width: 50%;
