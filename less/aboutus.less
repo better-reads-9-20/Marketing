@@ -1,0 +1,51 @@
+.aboutUsContainers {
+    .flex(column, flex-start);
+    align-items: center;
+    text-align: center;
+
+    .profiles {
+        div {
+            margin: 5%;
+
+            h2 {
+                margin: 8% 0 4% 0;
+                padding: 4%;
+                border-bottom: 1px dotted @borderColor;
+            }
+
+            img {
+                width: 40%;
+                margin: 3%;
+                border: 10px solid @borderColor;
+            }
+        }
+    }
+
+    header {
+        border-bottom: 1px solid @borderColor;
+        padding-bottom: 2%;
+    }
+
+    @media @tablet {
+        .flex(column, flex-start);
+        align-items: center;
+
+        header {
+            img{
+                text-align: center;
+            }
+        }
+
+        .profiles{
+            .multiDevs{
+                .flex(row, space-evenly);
+                align-items: center;
+
+                img{
+                    width: 90%;
+                    
+                }
+            }
+        }
+    }
+}

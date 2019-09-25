@@ -143,7 +143,13 @@ body {
 h2,
 h3 {
   font-size: 3rem;
-  color: black;
+  color: teal;
+  font-family: Indie Flower, cursive;
+}
+h4 {
+  font-size: 2.2rem;
+  color: teal;
+  font-family: Indie Flower, cursive;
 }
 p {
   font-size: 1.8rem;
@@ -229,7 +235,7 @@ header nav a:hover {
 }
 .top-content h3 {
   margin: 3% 0;
-  color: black;
+  color: teal;
   font-family: Indie Flower, cursive;
 }
 .top-content p {
@@ -371,5 +377,49 @@ footer nav a {
     font-size: 1.8rem;
     margin: 2%;
     padding: 3%;
+  }
+}
+.aboutUsContainers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.aboutUsContainers .profiles div {
+  margin: 5%;
+}
+.aboutUsContainers .profiles div h2 {
+  margin: 8% 0 4% 0;
+  padding: 4%;
+  border-bottom: 1px dotted #411e09;
+}
+.aboutUsContainers .profiles div img {
+  width: 40%;
+  margin: 3%;
+  border: 10px solid #411e09;
+}
+.aboutUsContainers header {
+  border-bottom: 1px solid #411e09;
+  padding-bottom: 2%;
+}
+@media (min-width: 500px) {
+  .aboutUsContainers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .aboutUsContainers header img {
+    text-align: center;
+  }
+  .aboutUsContainers .profiles .multiDevs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .aboutUsContainers .profiles .multiDevs img {
+    width: 90%;
   }
 }
