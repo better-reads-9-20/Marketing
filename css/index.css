@@ -221,6 +221,7 @@ header nav a:hover {
 }
 .top-content {
   margin: 4% 0;
+  border-bottom: 1px solid teal;
 }
 .top-content img {
   width: 100%;
@@ -229,6 +230,7 @@ header nav a:hover {
 .top-content h3 {
   margin: 3% 0;
   color: black;
+  font-family: Indie Flower, cursive;
 }
 .top-content p {
   margin-bottom: 2%;
@@ -242,6 +244,8 @@ header nav a:hover {
   justify-content: space-between;
   margin-bottom: 6%;
   height: 275px;
+  padding-bottom: 4%;
+  border-bottom: 1px solid teal;
 }
 .middle-content .middle-text {
   width: 45%;
@@ -251,6 +255,7 @@ header nav a:hover {
 }
 .middle-content .middle-text h3 {
   margin: 5% 0;
+  font-family: Indie Flower, cursive;
 }
 .middle-content .middle-text button {
   width: 25vw;
@@ -263,6 +268,9 @@ header nav a:hover {
   width: 100%;
 }
 @media (min-width: 500px) {
+  .middle-content {
+    padding-bottom: 12%;
+  }
   .middle-content .middle-img img {
     height: 325px;
   }
@@ -292,6 +300,7 @@ header nav a:hover {
 }
 .bottom-content .bottom-text h3 {
   margin: 5% 0;
+  font-family: Indie Flower, cursive;
 }
 .bottom-content .bottom-text button {
   width: 25vw;
@@ -321,15 +330,46 @@ footer {
   background: grey;
   width: 100%;
   text-align: center;
-}
-footer nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+footer .footerImg {
+  width: 15vw;
+  margin: 1vw;
+}
+footer .footerImg img {
+  width: 100%;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 70vw;
+  align-items: flex-end;
+}
 footer nav a {
   padding: 2%;
-  font-size: 1.6rem;
+  margin: 5%;
+  font-size: 1.4rem;
   text-decoration: none;
   color: darkslategrey;
+  white-space: nowrap;
+}
+@media (min-width: 800px) {
+  footer .footerImg {
+    width: 100px;
+    margin: 10px;
+  }
+  footer .footerImg img {
+    width: 75px;
+  }
+  footer nav {
+    width: 600px;
+  }
+  footer nav a {
+    font-size: 1.8rem;
+    margin: 2%;
+    padding: 3%;
+  }
 }
