@@ -132,7 +132,7 @@ html {
 body {
   width: 90vw;
   max-width: 90vw;
-  margin: 20px 20px;
+  margin: 2% auto;
 }
 .container {
   display: flex;
